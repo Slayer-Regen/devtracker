@@ -1,6 +1,6 @@
-# 🚀 Developer Productivity Tracker
+# 🚀 Developer Productivity Tracker (DevTracker)
 
-A **full-stack web app** to track coding sessions, GitHub commits, LeetCode progress, Pomodoro focus sessions, and Resume tips — all in a beautiful dashboard!
+A **full-stack web app** to track coding sessions, GitHub commits, LeetCode progress, Pomodoro focus sessions — all in a beautiful dashboard!
 
 ## 📚 Table of Contents
 - [Overview](#overview)
@@ -34,10 +34,10 @@ Built for developers who want to **track their growth daily**.
 
 - **Frontend**: Next.js + Tailwind CSS
 - **Backend**: Node.js + Express.js
-- **Database**: MongoDB (or PostgreSQL optional)
-- **Authentication**: JWT (or Clerk/Auth0 optional)
+- **Database**: MongoDB 
+- **Authentication**: JWT 
 - **Charts**: Chart.js / Recharts
-- **State Management**: Context API or Zustand
+- **State Management**: Zustand
 - **Other Tools**: node-cron, axios, cheerio (scraping)
 
 ---
@@ -49,62 +49,9 @@ Built for developers who want to **track their growth daily**.
 - ✅ Automatic GitHub Commit Tracker
 - ✅ Automatic LeetCode Stats Tracker
 - ✅ Pomodoro Timer with Logs
-- ✅ Resume Tips and Notes Section
 - ✅ Beautiful Dashboard Visualization
-- ✅ API Integration and Auto Data Sync
-- ✅ Mobile Responsive Design
+- ✅ API Integration and Auto Data Sync(Cron Job)
 
----
-
-## ⚙️ Project Setup
-
-### 1. Clone the repo
-```bash
-git clone https://github.com/your-username/dev-productivity-tracker.git
-cd dev-productivity-tracker
-```
-
-### 2. Install dependencies
-```bash
-# For frontend
-cd frontend
-npm install
-
-# For backend
-cd ../backend
-npm install
-```
-
-### 3. Configure environment variables
-Create `.env` files for frontend and backend.
-
-Backend `.env`:
-```env
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-GITHUB_TOKEN=your_github_personal_access_token
-PORT=5000
-```
-
-Frontend `.env.local`:
-```env
-NEXT_PUBLIC_API_URL=http://localhost:5000
-```
-
-### 4. Run the app
-```bash
-# Backend
-cd backend
-npm run dev
-
-# Frontend
-cd frontend
-npm run dev
-```
-
-App will run on:
-- Frontend: http://localhost:3000
-- Backend: http://localhost:5000
 
 ---
 
@@ -140,17 +87,16 @@ App will run on:
 - GitHub commits are fetched using:
   - **GitHub API** via a **Personal Access Token** (PAT).
   - You can fetch commit counts by date, repo, etc.
-- Tools: `axios`, `octokit/rest.js` (optional)
+- Tools: `axios`, `octokit/rest.js` 
 
 ### LeetCode
 - LeetCode data is fetched using:
-  - **Unofficial APIs** or **Web Scraping** (using `cheerio`).
+  - **Web Scraping** (using `cheerio`).
   - Gets the number of Easy, Medium, and Hard problems solved.
 
-- Alternatively, use open-source npm packages like `leetcode-api` if you don't want to maintain scraping.
 
 ### Syncing
-- **Cron Jobs** (`node-cron`) run every few hours to auto-sync GitHub and LeetCode data.
+- **Cron Jobs** (`node-cron`) run every 6 hours to auto-sync GitHub and LeetCode data.
 - Data is saved into MongoDB collections for persistence.
 
 ---
@@ -187,21 +133,9 @@ App will run on:
 
 ---
 
-## 🚀 Deployment Guide
 
-1. **Frontend**: Deploy on **Vercel** (zero-config for Next.js)
-2. **Backend**: Deploy on **Render** or **Fly.io**
-3. Add MongoDB (Atlas) connection
-4. Setup environment variables on deployment platforms
-5. (Optional) Add a domain + HTTPS
+## 🌟Future Prospects
 
----
-
-## 🌟 Stretch Goals
-
-- 🎯 **VS Code Extension** to log Pomodoro Sessions directly
-- 🎯 **Leaderboard** for GitHub commits / LeetCode problems
-- 🎯 **AI Resume Tips Generator** using GPT APIs
 - 🎯 **Mobile App** using React Native or Expo
 - 🎯 **Dockerize** the project for easy deployment
 - 🎯 **Tests** (Jest + Supertest for backend, React Testing Library for frontend)
@@ -209,13 +143,11 @@ App will run on:
 ---
 
 ## 📸 Screenshots
-_Add sample screenshots of dashboard graphs, Pomodoro timer, GitHub/LeetCode stats once ready!_
 
----
+![Coding_session](https://github.com/user-attachments/assets/029b8224-3e79-41c1-a87e-efc58aca4ce6)
+![Github Commits](https://github.com/user-attachments/assets/de14a324-a3c0-460e-8a8a-b099714575bb)
+![Leetcode Stats](https://github.com/user-attachments/assets/b54d4e46-a519-488b-a350-2cec6518ee0f)
 
-# ✨ Final Note
-This is an amazing project for building your:
-- Full-stack skills (Next.js + Node.js)
-- API integrations (GitHub + LeetCode)
-- Clean project structure
-- Developer productivity tracking habits 💻🚀
+
+
+
