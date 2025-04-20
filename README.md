@@ -1,4 +1,4 @@
-# 🚀 Developer Productivity Tracker (DevTracker)
+# 🚀 DevTracker
 
 A **full-stack web app** to track coding sessions, GitHub commits, LeetCode progress, Pomodoro focus sessions — all in a beautiful dashboard!
 
