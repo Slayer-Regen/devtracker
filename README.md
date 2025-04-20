@@ -23,7 +23,6 @@ This project is a **personal developer dashboard** that helps you:
 - Log your coding sessions
 - Track GitHub commits and LeetCode progress
 - Stay productive with a built-in Pomodoro timer
-- Get resume improvement tips
 - Visualize everything beautifully using charts and cards
 
 Built for developers who want to **track their growth daily**.
