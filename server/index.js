@@ -29,3 +29,12 @@ app.use('/api/auth', authRoutes);
 const sessionRoutes = require("./routes/sessionRoutes");
 app.use("/api/sessions", sessionRoutes);
 
+const githubRoutes = require("./routes/githubRoutes");
+app.use("/api/github", githubRoutes);
+
+const leetcodeRoutes = require("./routes/leetcodeRoutes");
+app.use("/api/leetcode", leetcodeRoutes);
+
+
+
+require('./cron/githubCron'); // add this at the bottom of your index.js
